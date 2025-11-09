@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maglinao-Banca Dental Clinic | About Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #63c5b5, #8fe3d1);
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav a {
+      margin: 0 20px;
+      color: #003333;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #007777;
+      font-weight: 700;
+    }
+
+    nav a.active {
+      color: #007777;
+      font-weight: 700;
+      border-bottom: 3px solid #007777;
+      padding-bottom: 5px;
+    }
+
+    section {
+      padding: 80px 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      max-width: 600px;
+    }
+
+    .about-text h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .about-text h2 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-top: 40px;
+    }
+
+    .about-text p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .about-image img {
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      border: 12px solid #1a5c5c;
+      object-fit: cover;
+    }
+
+    .dentist-section {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 80px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .dentist-info {
+      max-width: 600px;
+    }
+
+    .dentist-info h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .dentist-info h3 {
+      font-size: 20px;
+      font-weight: 500;
+      color: #003333;
+      background: white;
+      display: inline-block;
+      padding: 5px 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .dentist-info p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .dentist-img img {
+      width: 320px;
+      height: 320px;
+      border-radius: 20px;
+      border: 10px solid #1a5c5c;
+      object-fit: cover;
+    }
+
+    footer {
+      background: white;
+      color: #004d40;
+      text-align: center;
+      padding: 20px;
+      font-size: 15px;
+    }
+
+    footer a {
+      color: #004d40;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    @media (max-width: 900px) {
+      section, .dentist-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-image, .dentist-img {
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="MBDC-img/MDBC_LOGO.png" alt="Maglinao-Banca Dental Clinic Logo">
+    <nav>
+      <a href="mbdc.html" class="active">HOME</a>
+      <a href="mbdc-about.html">ABOUT</a>
+      <a href="mbdc-services.html">SERVICES</a>
+      <a href="mbdc-appointments.html">APPOINTMENT</a>
+      <a href="mbdc-faqs.html">FAQS</a>
+      <a href="mbdc-contact.html"">CONTACT US</a>
+    </nav>
+  </header>
+
+  <section>
+    <div class="about-text">
+      <h1>About Maglinao-Banca Dental Clinic</h1>
+      <p>
+        Situated in the heart of Binangonan, Maglinao-Banca Dental Clinic is dedicated to providing 
+        high-quality, affordable, and compassionate dental care for the whole family. 
+        Since opening, our goal has been to create a friendly and comfortable environment 
+        where every patient feels valued and confident with their smile.
+      </p>
+
+      <h2>Mission</h2>
+      <p>
+        To deliver high-quality, essential dental care that is accessible and affordable to every 
+        member of our community, focusing on preventative health and compassionate treatment.
+      </p>
+
+      <h2>Vision</h2>
+      <p>
+        A community where cost is never a barrier to essential dental care, and where every person 
+        feels valued, educated, and completely comfortable during their visit.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="MBDC-img\DENTIST-PATIENT.webp" alt="Clinic Overview Image">
+    </div>
+  </section>
+
+  <div class="dentist-section">
+    <div class="dentist-img">
+      <img src="C:\Users\Huawei\Desktop\html\try1\MBDC-website\MBDC-img\DentistProfile.jpg" alt="Dentist Photo">
+    </div>
+    <div class="dentist-info">
+      <h1>Dr. [Your Dentist's Name]</h1>
+      <h3>Resident Dentist & Founder</h3>
+      <p>
+        Dr. [Your Dentist's Name] is a licensed dental professional with years of experience in 
+        family and cosmetic dentistry. She is known for her gentle approach, attention to detail, 
+        and genuine care for her patients. Through continuous education and training, she remains 
+        updated with the latest advancements in dental care to provide the best service possible.
+      </p>
+      <p>
+        Her philosophy is simple — every patient deserves a healthy smile and a comfortable 
+        dental experience. At Maglinao-Banca Dental Clinic, she leads a team dedicated to 
+        ensuring every visit is filled with care, trust, and professionalism.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Maglinao-Banca Dental Clinic. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

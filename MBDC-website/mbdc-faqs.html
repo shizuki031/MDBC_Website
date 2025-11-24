@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maglinao-Banca Dental Clinic | FAQs</title>
   <style>
     body {
@@ -44,80 +44,47 @@
       padding-bottom: 5px;
     }
 
-    /* FAQ Section */
     .faq-section {
       max-width: 900px;
       margin: 60px auto;
       background: rgba(255, 255, 255, 0.12);
       border-radius: 15px;
       padding: 40px;
-      color: #fff;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
     }
 
     .faq-section h1 {
       text-align: center;
-      font-size: 42px;
+      font-size: 40px;
       margin-bottom: 30px;
-      font-weight: 800;
-      color: #ffffff;
+      color: #fff;
     }
 
-    .faq-item {
-      background: rgba(0, 0, 0, 0.22);
-      margin-bottom: 15px;
+    details {
+      background: rgba(0, 0, 0, 0.25);
+      padding: 15px 20px;
       border-radius: 10px;
-      overflow: hidden;
-      transition: 0.3s;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .faq-question {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 25px;
-      font-size: 18px;
-      font-weight: 600;
+      margin-bottom: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
       cursor: pointer;
-      background: rgba(255, 255, 255, 0.08);
     }
 
-    .faq-question:hover {
-      background: rgba(255, 255, 255, 0.15);
+    summary {
+      font-weight: bold;
+      font-size: 17px;
+      outline: none;
+      color: #fff;
     }
 
-    .faq-answer {
-      display: none;
+    summary:hover {
+      color:#007777;
     }
 
-    /* Active Answer */
-    .faq-item.active .faq-answer {
-      display: block;
-      background: rgba(255, 255, 255, 0.08);
-      padding: 0 25px 18px 25px;
+    details p {
+      margin-top: 10px;
       font-size: 15px;
-      line-height: 1.7;
-      color: #f1f1f1;
-      margin-top: 0;
-    }
-
-    /* Default Arrow */
-    .arrow {
-      color: white;
-      text-decoration: none;
-      font-size: 20px;
-      display: inline-block;
-      transition: transform 0.3s ease;
-    }
-
-    .arrow:hover {
-      color: #ccc;
-    }
-
-    /* Active Arrow*/
-    .faq-item.active .arrow {
-      transform: rotate(90deg);
+      line-height: 1.6;
+      color: #e9e9e9;
     }
 
     footer {
@@ -125,22 +92,19 @@
       color: #004d40;
       text-align: center;
       padding: 20px;
-      font-size: 15px;
       margin-top: 60px;
     }
 
     footer a {
       color: #004d40;
       text-decoration: none;
-      font-weight: 500;
     }
-
   </style>
 </head>
 
 <body>
   <header>
-    <img src="MBDC-img/MDBC_LOGO.png" alt="Maglinao-Banca Dental Clinic Logo">
+    <img src="MBDC-img/LOGO.png" alt="Logo">
     <nav>
       <a href="mbdc.html">HOME</a>
       <a href="mbdc-about.html">ABOUT</a>
@@ -154,79 +118,43 @@
   <section class="faq-section">
     <h1>Frequently Asked Questions</h1>
 
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>How can I book an appointment?</span>
-        <a href="faq-answer1.html" class="arrow">▶</a>
-      </div>
-      <div class="faq-answer">
-        You can easily book an appointment through our online form on the Appointment page.
-        Once submitted, our dental staff will contact you via email or phone to confirm your schedule.
-      </div>
-    </div>
+    <details>
+      <summary>How can I book an appointment?</summary>
+      <p>You can book an appointment through our online form on the Appointment page. We will contact you to confirm.
+      </p>
+    </details>
 
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>Do you accept walk-in patients?</span>
-        <a href="faq-answer2.html" class="arrow">▶</a>
-      </div>
-      <div class="faq-answer">
-        Yes, we accommodate walk-in patients whenever possible. However, we highly recommend setting
-        an appointment in advance to ensure you're attended to promptly.
-      </div>
-    </div>
+    <details>
+      <summary>Do you accept walk-in patients?</summary>
+      <p>Yes, we accept walk-ins if slots are available. However, we still recommend booking ahead.</p>
+    </details>
 
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>What dental services do you offer?</span>
-        <a href="faq-answer3.html" class="arrow">▶</a>
-      </div>
-      <div class="faq-answer">
-        We offer general dentistry, orthodontics, teeth cleaning, restorations, extractions,
-        cosmetic dentistry, veneers, and teeth whitening. Visit our Services page for full details.
-      </div>
-    </div>
+    <details>
+      <summary>What dental services do you offer?</summary>
+      <p>We offer general dentistry, orthodontics, cleaning, restorations, extractions, cosmetic dentistry, veneers, and
+        whitening.</p>
+    </details>
 
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>How often should I visit the dentist?</span>
-        <a href="faq-answer4.html" class="arrow">▶</a>
-      </div>
-      <div class="faq-answer">
-        We recommend visiting the dentist every six months for routine cleaning and oral check-ups
-        to maintain healthy teeth and gums.
-      </div>
-    </div>
+    <details>
+      <summary>How often should I visit the dentist?</summary>
+      <p>It's best to visit every 6 months for check-ups and cleaning.</p>
+    </details>
 
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>Do you accept dental insurance or HMO?</span>
-        <a href="faq-answer5.html" class="arrow">▶</a>
-      </div>
-      <div class="faq-answer">
-        Yes, we accept select dental insurance and HMO providers. Please contact our staff for
-        verification or bring your HMO card during your visit.
-      </div>
-    </div>
+    <details>
+      <summary>Do you accept dental insurance or HMO?</summary>
+      <p>Yes, we accept select insurance and HMO providers. Please bring your card for verification.</p>
+    </details>
 
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>What should I do in case of a dental emergency?</span>
-        <a href="faq-answer6.html" class="arrow">▶</a>
-      </div>
-      <div class="faq-answer">
-        For emergencies such as severe tooth pain, bleeding, or broken teeth, contact us immediately
-        through our clinic hotline. We accommodate urgent cases as much as possible.
-      </div>
-    </div>
+    <details>
+      <summary>What should I do in a dental emergency?</summary>
+      <p>For emergencies like pain or broken teeth, call our clinic hotline immediately.</p>
+    </details>
 
   </section>
 
   <footer>
     © 2025 Maglinao-Banca Dental Clinic. All Rights Reserved.
   </footer>
-
-
 </body>
 
 </html>

@@ -18,10 +18,6 @@
       align-items: center;
       padding: 20px 60px;
       background: white;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      box-shadow: 0 2px 8px rgba (0, 0, 0, 0.1);
     }
 
     header img {
@@ -50,13 +46,12 @@
     section {
       padding: 80px 100px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      flex-wrap: wrap;
+      align-items: center;
     }
 
     .about-text {
-      max-width: 600px;
+      width: 55%;
     }
 
     .about-text h1 {
@@ -73,7 +68,7 @@
 
     .about-text p {
       font-size: 16px;
-      line-height: 1.7;
+      line-height: 1.6;
       margin-top: 10px;
     }
 
@@ -91,11 +86,18 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
+    }
+
+    .dentist-img img {
+      width: 320px;
+      height: 320px;
+      border-radius: 20px;
+      border: 10px solid #1a5c5c;
+      object-fit: cover;
     }
 
     .dentist-info {
-      max-width: 600px;
+      width: 55%;
     }
 
     .dentist-info h1 {
@@ -117,16 +119,8 @@
 
     .dentist-info p {
       font-size: 16px;
-      line-height: 1.7;
+      line-height: 1.6;
       margin-top: 10px;
-    }
-
-    .dentist-img img {
-      width: 320px;
-      height: 320px;
-      border-radius: 20px;
-      border: 10px solid #1a5c5c;
-      object-fit: cover;
     }
 
     footer {
@@ -142,26 +136,15 @@
       text-decoration: none;
       font-weight: 500;
     }
-
-    @media (max-width: 900px) {
-      section, .dentist-section {
-        flex-direction: column;
-        text-align: center;
-        padding: 60px 40px;
-      }
-      .about-image, .dentist-img {
-        margin-top: 40px;
-      }
-    }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="MBDC-img/MDBC_LOGO.png" alt="Maglinao-Banca Dental Clinic Logo">
+    <img src="MBDC-img/LOGO.png" alt="Logo">
     <nav>
       <a href="mbdc.html">HOME</a>
-      <a href="mbdc-about.html">ABOUT</a>
+      <a href="mbdc-about.html" class="active">ABOUT</a>
       <a href="mbdc-services.html">SERVICES</a>
       <a href="mbdc-appointments.html">APPOINTMENT</a>
       <a href="mbdc-faqs.html">FAQS</a>
@@ -193,19 +176,20 @@
     </div>
 
     <div class="about-image">
-      <img src="MBDC-img/DENTIST-PATIENT.webp" alt="Clinic Overview Image">
+      <img src="MBDC-img/OVERVIEW.jpg" alt="Clinic Overview Image">
     </div>
   </section>
 
-  <div class="dentist-section">
+  <section class="dentist-section">
     <div class="dentist-img">
-      <img src="MBDC-img\Dentist.jpg" alt="Dentist Photo">
+      <img src="MBDC-img/DENTIST.jpg" alt="Dentist Photo">
     </div>
+
     <div class="dentist-info">
-      <h1>Dr. ()</h1>
+      <h1>Dr. Ernestina Maglinao - Banca</h1>
       <h3>Resident Dentist & Founder</h3>
       <p>
-        Dr. () is a licensed dental professional with years of experience in 
+        Dr. Ernestina Maglinao - Banca is a licensed dental professional with 25 years of experience in 
         family and cosmetic dentistry. She is known for her gentle approach, attention to detail, 
         and genuine care for her patients. Through continuous education and training, she remains 
         updated with the latest advancements in dental care to provide the best service possible.
@@ -216,7 +200,7 @@
         ensuring every visit is filled with care, trust, and professionalism.
       </p>
     </div>
-  </div>
+  </section>
 
   <footer>
     © 2025 Maglinao-Banca Dental Clinic. All Rights Reserved.

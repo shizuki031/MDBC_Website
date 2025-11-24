@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maglinao-Banca Dental Clinic | Book Appointment</title>
-</head>
-<style>
-  body {
+
+  <style>
+    body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(135deg, #63c5b5, #8fe3d1);
       color: #fff;
     }
 
-  header {
+    header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px 60px;
       background: white;
-      box-shadow: 0 2px 8px rgba (0,0,0,0.1);
     }
 
     header img {
       height: 60px;
     }
 
-    nav a {
+   nav a {
       margin: 0 20px;
       color: #003333;
       text-decoration: none;
@@ -45,45 +45,208 @@
       padding-bottom: 5px;
     }
 
+    .appointment {
+      display: flex;
+      justify-content: center;
+      padding: 80px 20px;
+      min-height: calc(100vh - 200px);
+    }
+
+    .form-container {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 40px;
+      border-radius: 20px;
+      width: 60%;
+      max-width: 800px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-container h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      text-align: center;
+      font-weight: 700;
+      color: white;
+    }
+
+    .form-container p {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: white;
+    }
+
+    .input-group input,
+    .input-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .options-group label {
+      display: inline-block;
+      width: 45%;
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .btn {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .submit-btn {
+      background: white;
+      color: #004d40;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .submit-btn:hover {
+      background: #f1f1f1;
+    }
+
+    .contact-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #007777;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 25px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
     footer {
       background: white;
       color: #004d40;
       text-align: center;
       padding: 20px;
-      font-size: 15px;
       margin-top: 60px;
     }
+  </style>
+</head>
 
-    footer a {
-      color: #004d40;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    @media (max-width:900px) {
-      .form-container {
-        width: 90%;
-        margin: auto;
-      }
-    }
-    
-</style>
 <body>
+
   <header>
-    <img src="MBDC-img/MDBC_LOGO.png" alt="Maglinao-Banca Dental Clinic Logo">
+    <img src="MBDC-img/LOGO.png" alt="Logo">
     <nav>
       <a href="mbdc.html">HOME</a>
       <a href="mbdc-about.html">ABOUT</a>
       <a href="mbdc-services.html">SERVICES</a>
-      <a href="mbdc-appointments.html" class="active" >APPOINTMENT</a>
+      <a href="mbdc-appointments.html" class="active">APPOINTMENT</a>
       <a href="mbdc-faqs.html">FAQS</a>
       <a href="mbdc-contact.html">CONTACT US</a>
     </nav>
   </header>
 
- <footer>
+
+  <section class="appointment">
+    <div class="form-container">
+
+      <h2>Book Your Appointment</h2>
+      <p>Fill out the form and we'll contact you to confirm your schedule.</p>
+
+      <div class="input-group">
+        <label>Full Name*</label>
+        <input type="text" required>
+      </div>
+
+      <div class="input-group">
+        <label>Email Address*</label>
+        <input type="email" required>
+      </div>
+
+      <div class="input-group">
+        <label>Contact Number*</label>
+        <input type="tel" required>
+      </div>
+
+      <!-- RADIO BUTTONS -->
+      <div class="input-group">
+        <label>I am a new patient*</label>
+        <div class="options-group">
+          <label><input type="radio" name="new" value="Yes"> Yes</label>
+          <label><input type="radio" name="new" value="No"> No</label>
+        </div>
+      </div>
+
+      <!-- PRIMARY CONCERNS -->
+      <div class="input-group">
+        <label>Primary Concerns*</label>
+        <div class="options-group">
+          <label><input type="checkbox"> Discolored Teeth</label>
+          <label><input type="checkbox"> Missing Teeth</label>
+          <label><input type="checkbox"> Gaps / Spaces</label>
+          <label><input type="checkbox"> Crooked Teeth</label>
+          <label><input type="checkbox"> Gummy Smile</label>
+        </div>
+      </div>
+
+      <!-- TREATMENTS -->
+      <div class="input-group">
+        <label>Treatment (Select all that apply)*</label>
+        <div class="options-group">
+          <label><input type="checkbox"> Restorative Dentistry</label>
+          <label><input type="checkbox"> General Dentistry</label>
+          <label><input type="checkbox"> Dental Veneers</label>
+          <label><input type="checkbox"> Orthodontics</label>
+          <label><input type="checkbox"> Teeth Whitening</label>
+          <label><input type="checkbox"> Root Canal</label>
+          <label><input type="checkbox"> Oral Surgery</label>
+          <label><input type="checkbox"> TMJ Treatment</label>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label>Preferred Appointment Date*</label>
+        <input type="date" required>
+      </div>
+
+      <div class="input-group">
+        <label>Message</label>
+        <textarea></textarea>
+      </div>
+
+      <div class="btn">
+        <a href="mbdc-typage.html" class="submit-btn">Make an Appointment →</a>
+      </div>
+
+      </form>
+    </div>
+  </section>
+
+  <a href="mbdc-contact.html" class="contact-float">💬 Need Help?</a>
+
+  <footer>
     © 2025 Maglinao-Banca Dental Clinic. All Rights Reserved.
   </footer>
 
 </body>
+
 </html>
